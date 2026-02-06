@@ -5,7 +5,7 @@ ENLACE DEL VIDEO DE EL ATTACK CDP
 CDP Flooding Attack Tool
  Descripción General
 Herramienta de auditoría de seguridad que demuestra vulnerabilidades en el protocolo CDP (Cisco Discovery Protocol) mediante la generación masiva de paquetes CDP falsos. El script inyecta dispositivos ficticios en la tabla CDP de switches y routers Cisco, saturándola con cientos de entradas falsas.
-⚠️ ADVERTENCIA: Esta herramienta es únicamente para fines educativos y pruebas de seguridad autorizadas en entornos controlados. El uso no autorizado en redes de producción es ilegal.
+ ADVERTENCIA: Esta herramienta es únicamente para fines educativos y pruebas de seguridad autorizadas en entornos controlados. El uso no autorizado en redes de producción es ilegal.
 
  Objetivo del Script
 El script cdp.py realiza un ataque de CDP Flooding con los siguientes objetivos:
@@ -59,7 +59,7 @@ Intervalo de envío: 0.02-0.08 segundos (aleatorio)
 Dirección MAC origen: Aleatoria en cada paquete
 
 
-📦 Requisitos del Sistema
+ Requisitos del Sistema
 Software Necesario:
 bash# Sistema Operativo
 - Linux (Kali Linux recomendado)
@@ -97,7 +97,7 @@ ip addr show
 # Verificar conectividad con el switch
 ping 11.98.1.1
 
-🚀 Uso de la Herramienta
+Uso de la Herramienta
 Ejecución Básica:
 bash# Navegar al directorio del script
 cd /home/reily
@@ -118,7 +118,7 @@ Configuración de la Interfaz:
 Si necesitas cambiar la interfaz de red, edita la variable IFACE en el script:
 pythonIFACE = "eth0"  # Cambiar por eth1, wlan0, etc.
 
-🔍 Verificación del Ataque
+ Verificación del Ataque
 En el Switch/Router Objetivo:
 ciscoSwitch# show cdp neighbors
 
