@@ -34,25 +34,6 @@ Ejecución del script cdp.py desde Kali Linux con permisos root
 <img width="1087" height="930" alt="imagen" src="https://github.com/user-attachments/assets/5d0e88dc-2674-47e0-988e-5ccf855677c0" />
 Tabla CDP del switch mostrando 235 dispositivos falsos inyectados. Nótese la saturación con múltiples entradas NODE-XXX
 
- Topología de Red
-                    ┌─────────────────────┐
-                    │  ATACANTE (Kali)    │
-                    │  IP: 11.98.1.3/24   │
-                    │  Interface: eth0    │
-                    └──────────┬──────────┘
-                               │ e0/0
-                               │
-                    ┌──────────┴──────────┐
-                    │      SW-1           │
-                    │   (Switch Cisco)    │
-                    └──┬──────────────┬───┘
-                  e0/2 │              │ e0/1
-                       │              │
-          ┌────────────┴───┐     ┌────┴──────────┐
-          │   Víctima      │     │      R1       │
-          │ 11.98.1.2/24   │     │  11.98.1.1/24 │
-          │                │     │  (Router)     │
-          └────────────────┘     └───────────────┘
 Detalles de Conectividad:
 DispositivoInterfazIPMáscaraVLANConectado aATACANTEeth011.98.1.3/241SW-1 (e0/0)SW-1e0/0--1ATACANTESW-1e0/1--1R1 (e0/0)SW-1e0/2--1VíctimaR1e0/011.98.1.1/241SW-1 (e0/1)Víctimae011.98.1.2/241SW-1 (e0/2)
 Configuración de VLANs:
